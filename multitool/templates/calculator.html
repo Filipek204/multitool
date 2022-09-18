@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>calculator</h1>
+    <h2 id="output">0</h2>
+    <button id="1" class ="button" type="button" onclick="add_to_list(this.id)">1</button>
+    <button id="2" class="button" type="button" onclick="add_to_list(this.id)">2</button>
+    <button id="3" class="button" type="button" onclick="add_to_list(this.id)">3</button>
+    <button id="4" class="button" type="button" onclick="add_to_list(this.id)">4</button>
+    <button id="5" class="button" type="button" onclick="add_to_list(this.id)">5</button>
+    <button id="6" class="button" type="button" onclick="add_to_list(this.id)">6</button>
+    <button id="7" class="button" type="button" onclick="add_to_list(this.id)">7</button>
+    <button id="8" class="button" type="button" onclick="add_to_list(this.id)">8</button>
+    <button id="9" class="button" type="button" onclick="add_to_list(this.id)">9</button>
+    <button id="0" class="button" type="button" onclick="add_to_list(this.id)">0</button>
+
+    <button id="-" class="button" type="button" onclick="function_buttons(this.id)">-</button>
+    <button id="+" class="button" type="button" onclick="function_buttons(this.id)">+</button>
+    <button id="/" class="button" type="button" onclick="function_buttons(this.id)">/</button>
+    <button id="*" class="button" type="button" onclick="function_buttons(this.id)">*</button>
+
+    <button id="=" class="button" type="button" onclick="equals()">=</button>
+    <button id="clear" class="button" type="button" onclick="c()">clear</button>
+    <button id="negate" class="button" type="button" onclick="negate()">-/+</button>
+    <button id="decimal" class="button" type="button" onclick="decimal()">.</button>
+    
+        
+    <script src="{% static 'js/calculator2.js' %}"></script>
+</body>
+</html>
